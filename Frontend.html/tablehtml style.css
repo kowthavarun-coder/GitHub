@@ -1,0 +1,82 @@
+
+                body {
+                        font-family: 'Segoe UI', Arial, sans-serif;
+                        background-color: #f8fafc;
+                        color: #1e293b;
+                        max-width: 1000px;
+                        margin: 30px auto;
+                        padding: 0 20px;
+                }
+                /* Places the image and heading side-by-side */
+                .header-box {
+                        display: flex;
+                        align-items: center;
+                        gap: 24px;
+                        background-color: #ffffff;
+                        padding: 20px;
+                        border-radius: 12px;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+                        margin-bottom: 24px;
+                }
+                .header-box img {
+                        width: 320px;
+                        height: auto;
+                        border-radius: 8px;
+                        border: 1px solid #cbd5e1;
+                }
+                .header-text h2 {
+                        margin: 0 0 10px 0;
+                        color: #1e3a8a;
+                        font-size: 28px;
+                }
+                .header-text p {
+                        margin: 6px 0;
+                        line-height: 1.5;
+                        color: #475569;
+                }
+                .formula-badge {
+                        display: inline-block;
+                        background-color: #eff6ff;
+                        border-left: 4px solid #1e3a8a;
+                        padding: 8px 12px;
+                        margin-top: 8px;
+                        border-radius: 4px;
+                        font-size: 14px;
+                }
+                table {
+                        border-collapse: collapse;
+                        width: 100%;
+                        background-color: #ffffff;
+                        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+                }
+                thead th {
+                        background-color: #1e3a8a;
+                        color: #ffffff;
+                        padding: 12px;
+                        text-align: center;
+                }
+                .group-cell {
+                        background-color: #e2e8f0;
+                        font-weight: bold;
+                        color: #1e293b;
+                }
+                tr.highlight {
+                        background-color: #dbeafe;
+                        color: #1e3a8a;
+                        font-weight: bold;
+                }
+                td {
+                        padding: 10px;
+                        text-align: center;
+                }
+                /* Stacks image on top on small mobile screens */
+                @media (max-width: 650px) {
+                        .header-box {
+                                flex-direction: column;
+                                text-align: center;
+                        }
+                        .header-box img {
+                                width: 100%;
+                        }
+                }
+        
